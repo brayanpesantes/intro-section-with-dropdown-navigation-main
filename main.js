@@ -1,40 +1,33 @@
-const openMenu = document.getElementById('open-menu');
-const closeMenu = document.getElementById('close-menu');
-const navigation = document.getElementById('navigation');
-const items = document.querySelectorAll('.item')
-const subItems = document.querySelectorAll('.subItem')
+const links = document.querySelectorAll('.menu>.menu__item>.menu__link');
+const sublinks = document.querySelectorAll('.sub__menu-btn');
+const subMenus = document.querySelectorAll('.submenu')
+const responsiveMenu = window.innerWidth;
 
-openMenu.addEventListener('click', () => {
-    navigation.classList.add('openMenu');
-    navigation.classList.remove('closeMenu');
-})
-
-closeMenu.addEventListener('click', () => {
-    navigation.classList.add('closeMenu');
-    navigation.classList.remove('openMenu');
-
-})
-
-items.forEach(item => {
-
-    item.addEventListener('click', () => {
-        removeClassActive();
-        if (!item.classList.contains('active')) {
-            item.classList.add('active');
-            if (item.classList.contains('sub__menu')) {
-                item.childNodes[3].classList.toggle('activeSubMenu');
-                // console.log(item.childNodes)
-                // if (item.childNodes[3]) {
-
-                //     console.log(item.childNodes[3])
-                // }
-            }
+links.forEach(link => {
+    link.addEventListener('click', function() {
+        removeAllIcon()
+        clearActiveMenu(links, 'active')
+        clearActiveMenu(subMenus, 'activeSubmenu')
+        link.classList.add('active');
+        const subMebnu = this.nextElementSibling;
+        if (link.classList.contains('sub__menu-btn')) {
+            const iconActive = link.childNodes[1];
+            iconActive.classList.remove('bx-chevron-down')
+            iconActive.classList.add('bx-chevron-up')
+            subMebnu.classList.add('activeSubmenu')
         }
-    })
+    });
 })
 
-const removeClassActive = () => {
-    items.forEach(item => {
-        item.classList.remove('active');
+const removeAllIcon = () => {
+    sublinks.forEach(item => {
+        item.childNodes[1].classList.remove('bx-chevron-up')
+        item.childNodes[1].classList.add('bx-chevron-down')
+    })
+}
+
+const clearActiveMenu = (element, classItem) => {
+    element.forEach(item => {
+        item.classList.remove(classItem)
     })
 }
