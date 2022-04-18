@@ -125,6 +125,59 @@
     .active {
         color: var(--AlmostBlack);
     }
+    /* ?CREACION DE LA SECCION DE HERO */
+    
+    .hero {
+        padding-top: 5rem;
+        display: flex;
+        width: 950px;
+        height: auto;
+        margin: 0 auto;
+    }
+    
+    .hero__content {
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+        align-content: flex-end;
+    }
+    
+    .hero__content .hero__content__text h1 {
+        font-size: 70px;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+    
+    .hero__content .hero__content__text p {
+        font-weight: 500;
+        color: var(--MediumGray);
+        margin-bottom: 30px;
+        width: 90%;
+    }
+    
+    .hero__content .hero__content__images {
+        display: flex;
+        gap: 1rem;
+        margin-top: 30px;
+    }
+    
+    .hero__content .hero__content__images {
+        height: 30px;
+    }
+    
+    .hero__image {
+        flex-basis: 50%;
+    }
+    
+    .hero__image img {
+        width: 100%;
+    }
+    
+    .btn__more {
+        margin-top: 10px;
+        border-radius: 15px;
+        border: 2px solid var(--MediumGray);
+    }
     
     @media screen and (max-width:376px) {
         header {
