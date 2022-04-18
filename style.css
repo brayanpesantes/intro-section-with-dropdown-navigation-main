@@ -187,12 +187,14 @@
         color: var(--AlmostBlack);
         border: 2px solid var(--AlmostBlack);
     }
+    /* TODO: RESPONSIVO  */
     
     @media screen and (max-width:376px) {
         main {
             height: auto;
         }
         header {
+            padding: 20px 10px;
             position: relative;
         }
         .navbar {
