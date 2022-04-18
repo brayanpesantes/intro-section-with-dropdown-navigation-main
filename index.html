@@ -95,7 +95,10 @@
                 </div>
             </article>
             <div class="hero__image">
-                <img src="images/image-hero-desktop.png" alt="" srcset="images/image-hero-mobile.png" sizes="(max-width: 376px)">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="images/image-hero-mobile.png" media="">
+                    <img src="images/image-hero-desktop.png" alt="">
+                </picture>
             </div>
         </section>
         <div class="padding-mobile" />
