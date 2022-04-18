@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="style.css">
+    <!-- iconos -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <main>
+        <header>
+            <div class="header__logo">
+                <img src="/images/logo.svg" alt="logo">
+            </div>
+
+            <nav class="navigation closeMenu" id="navigation">
+                <div class="icon__close" id="close-menu">
+                    <i class="bx bx-x bx-lg bx-color"></i>
+                </div>
+                <ul class="navigation__items" id="navigation">
+                    <li class="item feature" id="features">
+                        <a href="#">Features <i class='bx bx-chevron-down'></i></a>
+                        <ul class="subItem features" id="feature">
+                            <li>
+                                <a href="#" class="item__list"><img src="images/icon-todo.svg" alt=""> Todo List</a>
+                            </li>
+                            <li>
+                                <a href="#" class="item__list"><img src="images/icon-calendar.svg" alt=""> Calender</a>
+                            </li>
+                            <li>
+                                <a href="#" class="item__list"><img src="images/icon-reminders.svg" alt=""> Reminders</a>
+                            </li>
+                            <li>
+                                <a href="#" class="item__list"><img src="images/icon-planning.svg" alt=""> Planning</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="companys">
+                        <a href="#">Company <i class='bx bx-chevron-down'></i></a>
+                        <ul class="subItem company" id="company">
+                            <li><a href="#">History</a></li>
+                            <li><a href="#">Our Team</a></li>
+                            <li><a href="#">Blog</a></li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Careers</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__buttons">
+                <a href="#" class="btn btn__login">Login</a>
+                <a href="#" class="btn btn__register">Register</a>
+            </div>
+
+            <div class="icon__menu" id="open-menu">
+                <img src="images/icon-menu.svg" alt="imagen" class="icon">
+            </div>
+        </header>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci est tenetur ratione nisi dolorum quod labore quis alias numquam incidunt exercitationem libero eum, sapiente mollitia. Officiis voluptates quae ducimus quos eligendi aliquam nisi
+            obcaecati, dolorem doloremque repellat saepe placeat. Et harum doloribus iure repellat consequatur, sunt exercitationem sequi quisquam saepe voluptates! Praesentium sit sapiente eius voluptate inventore corporis recusandae illum veritatis
+            veniam suscipit reiciendis, consectetur expedita eum et tenetur iste aperiam nam, iure distinctio tempora fugit doloremque? Saepe quia, aperiam ipsum quis aliquid doloremque iure adipisci velit! Laudantium ab cupiditate sint necessitatibus
+            soluta itaque delectus non placeat! Ducimus, et corrupti.</p>
+        <!-- <section class="hero">
+            <article class="hero__content">
+                <div class="hero__content__text">
+                    <h1>Make <br> remote work</h1>
+                    <p> Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+                    <a href="#" class="btn btn__more"> Learn more</a>
+                </div>
+                <div class="hero__content__images">
+                    <img src="images/client-databiz.svg" alt="">
+                    <img src="images/client-audiophile.svg" alt="">
+                    <img src="images/client-meet.svg" alt="">
+                    <img src="images/client-maker.svg" alt="">
+                </div>
+            </article>
+            <div class="hero__image">
+                <img src="images/image-hero-desktop.png" alt="" srcset="images/image-hero-mobile.png" sizes="(max-width: 375px)">
+            </div>
+        </section> -->
+
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>
