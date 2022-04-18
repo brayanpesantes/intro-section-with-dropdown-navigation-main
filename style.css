@@ -126,10 +126,6 @@
         color: var(--AlmostBlack);
     }
     
-    .activeMenu {
-        transform: translate(0)
-    }
-    
     @media screen and (max-width:376px) {
         header {
             position: relative;
@@ -186,5 +182,8 @@
             right: 0;
             top: 0;
             z-index: 1;
+        }
+        .activeMenu {
+            transform: translate(0%)
         }
     }
