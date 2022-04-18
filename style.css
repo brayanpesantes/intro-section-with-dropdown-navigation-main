@@ -72,6 +72,11 @@
         padding: 20px 40px;
     }
     
+    .navbar {
+        transform: translate(100%);
+        transition: all 1s cubic-bezier(0.39, 0.575, 0.565, 1);
+    }
+    
     .menu {
         display: flex;
         align-items: center;
@@ -126,6 +131,10 @@
         color: var(--AlmostBlack);
     }
     
+    .activeMenu {
+        transform: translate(0)
+    }
+    
     @media screen and (max-width:376px) {
         header {
             position: relative;
@@ -167,6 +176,7 @@
             display: none;
             margin-bottom: 1.5rem;
             margin-left: 1rem;
+            transition: all 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53);
         }
         .activeSubmenu {
             display: block;
