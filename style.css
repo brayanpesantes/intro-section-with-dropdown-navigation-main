@@ -95,14 +95,6 @@
         margin-left: 20px;
     }
     
-    header .navigation .navigation__items li:hover .company {
-        display: flex;
-    }
-    
-    header .navigation .navigation__items li:hover .feature {
-        display: flex;
-    }
-    
     header .navigation .navigation__items .feature:nth-of-type(1) {
         margin-top: 4rem;
     }
@@ -128,4 +120,12 @@
     
     .openMenu {
         transform: translateX(0%);
+    }
+    
+    .active a {
+        color: var(--AlmostBlack) !important;
+    }
+    
+    .activeSubMenu {
+        display: flex;
     }
