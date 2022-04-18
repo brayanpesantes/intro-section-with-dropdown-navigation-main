@@ -140,6 +140,7 @@
         display: flex;
         flex-direction: column;
         align-content: flex-end;
+        justify-content: flex-end;
     }
     
     .hero__content .hero__content__text h1 {
@@ -151,7 +152,7 @@
     .hero__content .hero__content__text p {
         font-weight: 500;
         color: var(--MediumGray);
-        margin-bottom: 30px;
+        margin-bottom: 2rem;
         width: 90%;
     }
     
@@ -175,11 +176,22 @@
     
     .btn__more {
         margin-top: 10px;
+        color: var(--AlmostWhite);
+        background: var(--AlmostBlack);
+        border-radius: 10px;
+    }
+    
+    .btn__more:hover {
         border-radius: 15px;
-        border: 2px solid var(--MediumGray);
+        background: transparent;
+        color: var(--AlmostBlack);
+        border: 2px solid var(--AlmostBlack);
     }
     
     @media screen and (max-width:376px) {
+        main {
+            height: auto;
+        }
         header {
             position: relative;
         }
@@ -238,5 +250,45 @@
         }
         .activeMenu {
             transform: translate(0%)
+        }
+        .hero {
+            width: 100vw;
+            flex-direction: column-reverse;
+            gap: 2rem;
+        }
+        .hero .hero__content {
+            flex-basis: 100%;
+        }
+        .hero .hero__image {
+            flex-basis: 100%;
+        }
+        /* .hero .hero__image img {
+            height: 100%;
+        } */
+        .hero .hero__content .hero__content__text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .hero .hero__content .hero__content__text h1 {
+            font-size: 35px;
+            text-align: center;
+        }
+        .hero .hero__content .hero__content__text h1 br {
+            display: none;
+        }
+        .hero .hero__content .hero__content__text p {
+            font-size: 14px;
+            width: 100%;
+            text-align: center;
+        }
+        .hero__content__images {
+            margin: auto;
+        }
+        .hero__content__images img {
+            height: 18px;
+        }
+        .padding-mobile {
+            padding: 2rem;
         }
     }
