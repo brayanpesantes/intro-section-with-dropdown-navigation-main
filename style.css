@@ -291,7 +291,8 @@
         .hero__content__images img {
             height: 18px;
         }
-        .padding-mobile {
-            padding: 2rem;
-        }
+    }
+    
+    .padding-mobile {
+        padding: 2rem;
     }
