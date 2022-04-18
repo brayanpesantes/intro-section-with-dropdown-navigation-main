@@ -31,3 +31,18 @@ const clearActiveMenu = (element, classItem) => {
         item.classList.remove(classItem)
     })
 }
+
+//? BUTTON OPEN MENU
+const menu = document.getElementById('nav-bar');
+const openMenu = document.getElementById('open-menu');
+openMenu.addEventListener('click', () => {
+        const menu = document.getElementById('nav-bar');
+        menu.classList.add('activeMenu');
+    })
+    //! BUTTON CLOSE MENU
+
+const closeMenu = document.getElementById('navbar-close');
+
+closeMenu.addEventListener('click', () => {
+    menu.classList.remove('activeMenu');
+})
