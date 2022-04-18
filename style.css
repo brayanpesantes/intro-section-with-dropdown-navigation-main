@@ -72,11 +72,6 @@
         padding: 20px 40px;
     }
     
-    .navbar {
-        transform: translate(100%);
-        transition: all 1s cubic-bezier(0.39, 0.575, 0.565, 1);
-    }
-    
     .menu {
         display: flex;
         align-items: center;
@@ -138,6 +133,10 @@
     @media screen and (max-width:376px) {
         header {
             position: relative;
+        }
+        .navbar {
+            transform: translate(100%);
+            transition: all 1s cubic-bezier(0.39, 0.575, 0.565, 1);
         }
         .open__menu {
             display: block;
