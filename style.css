@@ -95,7 +95,11 @@
         margin-left: 20px;
     }
     
-    header .navigation .navigation__items li:hover .subItem {
+    header .navigation .navigation__items li:hover .company {
+        display: flex;
+    }
+    
+    header .navigation .navigation__items li:hover .feature {
         display: flex;
     }
     
