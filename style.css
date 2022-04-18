@@ -16,6 +16,7 @@
     body {
         font-family: 'Epilogue', sans-serif;
         background: var(--MediumGray);
+        overflow-x: hidden;
     }
     
     p {
@@ -130,7 +131,6 @@
     .hero {
         padding-top: 5rem;
         display: flex;
-        gap: 1rem;
         width: 950px;
         height: auto;
         margin: 0 auto;
